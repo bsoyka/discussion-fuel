@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "discussion-fuel"
-version = "1.0.0"
+version = "1.1.0"
 description = "A tool to automate sharing of conversation starters across multiple platforms"
 authors = ["Ben Soyka <hello@bsoyka.me>"]
 license = "MIT"
@@ -15,7 +15,6 @@ tweepy = "^3.10.0"
 "dislash.py" = "^1.4.6"
 mongoengine = "^0.23.1"
 dnspython = "^2.1.0"
-discord-webhook = "^0.14.0"
 
 [tool.poetry.dev-dependencies]
 blue = "^0.6.0"
@@ -27,4 +26,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
-run = "python main.py"
+run = "python bot/main.py"
